@@ -107,6 +107,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #ff6b3b;
 }
 
+@media (max-width: 1199px){
+  .cta{
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 991px){
+  .mx-auto{
+    margin-top: 10px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -369,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") center center;
+  /* background: url("../img/hero-bg.jpeg") center center; */
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -379,7 +391,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -585,14 +596,22 @@ section {
 
 .why-us .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #4682B4;
+  color: #11b11d;
+  margin-bottom: 30px;
+}
+
+.why-us .icon-boxes .flaticon {
+  font-size: 40px;
+  color: #11b11d;
   margin-bottom: 30px;
 }
 
 .why-us .icon-boxes .icon-box h4 {
-  font-size: 17px;
+  font-size: 26px;
   font-weight: 700;
   margin: 0 0 30px 0;
+  text-transform: uppercase;
+  color: #4682b4;
 }
 
 .why-us .icon-boxes .icon-box h4::before {
@@ -604,6 +623,7 @@ section {
 .why-us .icon-boxes .icon-box p {
   font-size: 15px;
   color: #716f6f;
+  overflow-wrap: break-word;
 }
 
 /*--------------------------------------------------------------
@@ -656,6 +676,7 @@ section {
 .about .icon-box .title {
   margin-left: 85px;
   font-weight: 700;
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 18px;
 }
@@ -784,14 +805,18 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  height: 100px;
+  vertical-align: middle;
 }
 
 .clients .owl-item img {
-  width: 75%;
+  width: 95%; 
+  max-height: 90%; 
   opacity: 0.5;
   transition: ease-in-out 0.3s;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  margin: 0 10px;
 }
 
 .clients .owl-item img:hover {
@@ -817,16 +842,40 @@ section {
 .clients .owl-dot.active {
   background-color: #4682B4 !important;
 }
-
+@media (max-width: 767px){
+  .services .icon-box{
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .services .icon-box{
+    width: 62%;
+  }
+}
+@media (max-width: 550px){
+  .services .icon-box{
+    width: 66%;
+  }
+}
+@media (max-width: 500px){
+  .services .icon-box{
+    width: 70%;
+  }
+}
+@media (max-width: 400px){
+  .services .icon-box{
+    width: 95%;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 50px 20px;
+  padding: 40px 20px;
   margin-top: 35px;
   margin-bottom: 25px;
   text-align: center;
-  height: 200px;
+  height: 270px;
   position: relative;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -846,19 +895,18 @@ section {
   text-align: center;
   width: 72px;
   height: 72px;
-  background: #4682B4;
+  background: #11b11d;
 }
 
 .services .icon i {
   color: #fff;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
-  text-transform: uppercase;
 }
 
 .services .title a {
@@ -867,11 +915,11 @@ section {
 
 .services .icon-box:hover .icon {
   background: #fff;
-  border: 2px solid #4682B4;
+  border: 2px solid #11b11d;
 }
 
 .services .icon-box:hover .icon i {
-  color: #4682B4;
+  color: #11b11d;
 }
 
 .services .icon-box:hover .title a {
@@ -882,7 +930,41 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
-
+@media (max-width: 1199px){
+  .services .icon-box{
+    height: 222px;
+  }
+}
+@media (max-width: 767px){
+  .services .icon-box{
+    height: 158px;
+  }
+}
+@media (max-width: 600px){
+  .services .icon-box{
+    height: 219px;
+  }
+}
+@media (max-width: 520px){
+  .services .icon-box{
+    height: 271px;
+  }
+}
+@media (max-width: 450px){
+  .services .icon-box{
+    height: 241px;
+  }
+}
+@media (max-width: 400px){
+  .services .icon-box{
+    height: 214px;
+  }
+}
+@media (max-width: 350px){
+  .services .icon-box{
+    height: 240px;
+  }
+}
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
@@ -1425,6 +1507,7 @@ section {
   color: #313030;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px;
+  height: 156px;
 }
 
 .contact .info-box i {
@@ -1443,11 +1526,11 @@ section {
   margin: 10px 0 10px 68px;
 }
 
-.contact .info-box p {
-  padding: 0;
+.contact .info-box p{
+  padding: 8px 10px 0 0;
   line-height: 24px;
   font-size: 14px;
-  margin: 0 0 0 68px;
+  text-align: right;
 }
 
 .contact .php-email-form {
@@ -1546,6 +1629,20 @@ section {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1199px){
+  .contact .info-box {
+    padding: 20px 10px;
+    height: 172px;
+    margin-bottom: 10px;
+  }
+  .contact .info-box p {
+    padding: 8px 0px 0 0;
+  }
+  .contact .contact-box {
+    padding-left: 10px;
   }
 }
 

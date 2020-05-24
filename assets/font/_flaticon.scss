@@ -1,0 +1,84 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 23/05/2020 23:26
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-umbrella:before { content: "\f100"; }
+.flaticon-production:before { content: "\f101"; }
+.flaticon-fabric:before { content: "\f102"; }
+.flaticon-floor:before { content: "\f103"; }
+.flaticon-floor-1:before { content: "\f104"; }
+.flaticon-floor-2:before { content: "\f105"; }
+.flaticon-floor-3:before { content: "\f106"; }
+.flaticon-floor-scrubber:before { content: "\f107"; }
+.flaticon-floor-4:before { content: "\f108"; }
+.flaticon-project:before { content: "\f109"; }
+.flaticon-pattern:before { content: "\f10a"; }
+.flaticon-mop:before { content: "\f10b"; }
+.flaticon-vegetable-oil:before { content: "\f10c"; }
+.flaticon-goods:before { content: "\f10d"; }
+.flaticon-ink:before { content: "\f10e"; }
+.flaticon-barrel:before { content: "\f10f"; }
+.flaticon-industry:before { content: "\f110"; }
+.flaticon-bridge:before { content: "\f111"; }
+.flaticon-maintenance:before { content: "\f112"; }
+.flaticon-civil:before { content: "\f113"; }
+.flaticon-crack:before { content: "\f114"; }
+.flaticon-crack-1:before { content: "\f115"; }
+    
+    $font-Flaticon-umbrella: "\f100";
+    $font-Flaticon-production: "\f101";
+    $font-Flaticon-fabric: "\f102";
+    $font-Flaticon-floor: "\f103";
+    $font-Flaticon-floor-1: "\f104";
+    $font-Flaticon-floor-2: "\f105";
+    $font-Flaticon-floor-3: "\f106";
+    $font-Flaticon-floor-scrubber: "\f107";
+    $font-Flaticon-floor-4: "\f108";
+    $font-Flaticon-project: "\f109";
+    $font-Flaticon-pattern: "\f10a";
+    $font-Flaticon-mop: "\f10b";
+    $font-Flaticon-vegetable-oil: "\f10c";
+    $font-Flaticon-goods: "\f10d";
+    $font-Flaticon-ink: "\f10e";
+    $font-Flaticon-barrel: "\f10f";
+    $font-Flaticon-industry: "\f110";
+    $font-Flaticon-bridge: "\f111";
+    $font-Flaticon-maintenance: "\f112";
+    $font-Flaticon-civil: "\f113";
+    $font-Flaticon-crack: "\f114";
+    $font-Flaticon-crack-1: "\f115";

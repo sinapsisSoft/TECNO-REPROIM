@@ -25,6 +25,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/font/flaticon.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -37,7 +38,7 @@
       <div class="contact-info mr-auto">
         <ul>
           <li><i class="icofont-envelope"></i><a href="mailto:contact@example.com">contacto@tecno-reproim.com</a></li>
-          <li><i class="icofont-phone"></i> +(57) 311 538 9461 - 314 552 1338 - 317 646 2101</li>
+          <li><i class="icofont-phone"></i><a href="tel:573115389461">+(57) 311 538 9461</a> - <a href="tel:3145521338">314 552 1338</a> - <a href="tel:3176462101">317 646 2101</a></li>
           <li><i class="icofont-clock-time icofont-flip-horizontal"></i> Lun - Vie de 8:00am - 5:30pm. Sab - de 8:00am - 1:00pm</li>
         </ul>
 
@@ -89,12 +90,51 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="container" data-aos="fade-in">
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">    
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/slider/slide0.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/slide1.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/slider/slide2.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- <div class="container" data-aos="fade-in">
       <h1>BIENVENIDOS A TECNO-REPROIM S.A.S.</h1>
       <h2>Tecnología en recubrimientos, productos e impermeabilizaciones.</h2>
-    </div>
-  </section><!-- End Hero -->
+    </div> -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -115,28 +155,28 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-8 col-lg-7 d-flex">
+          <div class="col-xl-8 col-lg-7">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
+                <div class="col-xl-4 col-md-4 col-sm-6 col-xs-6 mx-auto d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-box col-md-12 mt-xl-0">
+                    <i class="flaticon flaticon-floor"></i>
                     <h4>Re</h4>                    
-                    <p>cubrimientos</p>
+                    <p>Recubrimientos</p>
                   </div>
                 </div>
-                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
+                <div class="col-xl-4 col-md-4 col-sm-6 col-xs-6 mx-auto d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box col-md-12 mt-xl-0">
+                    <i class="flaticon flaticon-production"></i>
                     <h4>Pro</h4>
-                    <p>ductos</p>
+                    <p>Productos</p>
                   </div>
                 </div>
-                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
+                <div class="col-xl-4 col-md-4 col-sm-6 col-xs-6 mx-auto d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box col-md-12 mt-xl-0">
+                    <i class="flaticon flaticon-umbrella"></i>
                     <h4>Im</h4>
-                    <p>permeabilizaciones</p>
+                    <p>Impermeabilizaciones</p>
                   </div>
                 </div>
               </div>
@@ -163,18 +203,18 @@
               impermeabilizaciones, reforzamiento estructural, mantenimiento locativo, obra civil, tratamiento de juntas y fisuras.</p>
 
             <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Cumplimiento y calidad</a></h4>
+              <div class="icon"><i class="bx bx-like"></i></div>
+              <h4 class="title">Cumplimiento y calidad.</h4>
             </div>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Experiencia y mano de obra calificada</a></h4>
+              <div class="icon"><i class="bx bx-medal"></i></div>
+              <h4 class="title">Experiencia y mano de obra calificada.</h4>
             </div>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Continuo mejoramiento e innovación </a></h4>
+              <div class="icon"><i class="bx bx-line-chart"></i></div>
+              <h4 class="title">Continuo mejoramiento e innovación.</h4>
             </div>
 
           </div>
@@ -188,14 +228,24 @@
       <div class="container" data-aos="fade-up">
 
         <div class="owl-carousel clients-carousel">
-          <img src="assets/img/clients/client-1.png" alt="">
-          <img src="assets/img/clients/client-2.png" alt="">
-          <img src="assets/img/clients/client-3.png" alt="">
-          <img src="assets/img/clients/client-4.png" alt="">
-          <img src="assets/img/clients/client-5.png" alt="">
-          <img src="assets/img/clients/client-6.png" alt="">
-          <img src="assets/img/clients/client-7.png" alt="">
-          <img src="assets/img/clients/client-8.png" alt="">
+          <img src="assets/img/clients/client-1.png" title="Crem Helado">
+          <img src="assets/img/clients/client-2.png" title="Wok">
+          <img src="assets/img/clients/client-3.png" title="Freska Leche">
+          <img src="assets/img/clients/client-4.png" title="Belcorp">
+          <img src="assets/img/clients/client-5.png" title="Cartagena Plaza">
+          <img src="assets/img/clients/client-6.png" title="Industrias Aliadas">
+          <img src="assets/img/clients/client-7.png" title="Club el Nogal">
+          <img src="assets/img/clients/client-8.png" title="Fresh Colombia">
+          <img src="assets/img/clients/client-9.png" title="El cerdito de la corte">
+          <img src="assets/img/clients/client-10.png" title="Mi gran parrilla Boyacense">
+          <img src="assets/img/clients/client-11.png" title="Jugos Naturales Montoya">
+          <img src="assets/img/clients/client-12.png" title="Cali mio">
+          <img src="assets/img/clients/client-13.png" title="La Brasa Roja">
+          <img src="assets/img/clients/client-14.png" title="Cali vea">
+          <img src="assets/img/clients/client-15.png" title="Relianz">
+          <img src="assets/img/clients/client-16.png" title="Hospital Universitario San Ignacio">
+
+
         </div>
 
       </div>
@@ -206,70 +256,70 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
+          <h2>Servicios</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-computer"></i></div>
+              <div class="icon"><i class="flaticon flaticon-fabric"></i></div>
               <h4 class="title"><a href="">Recubrimientos industriales para pisos</a></h4>
               <p class="description">Somos especialistas en sistemas de recubrimientos industriales, 
                 le ofrecemos soluciones a la medida para cualquier situación.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
+              <div class="icon"><i class="flaticon flaticon-goods"></i></div>
               <h4 class="title"><a href="">Productos de mantenimiento industrial</a></h4>
               <p class="description">Somos fabricantes, comercializadores y aplicadores 
                 de productos de mantenimiento industrial, limpieza y desinfección institucional.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-image"></i></div>
+              <div class="icon"><i class="flaticon flaticon-industry"></i></div>
               <h4 class="title"><a href="">Productos químicos para la construcción en general</a></h4>
               <p class="description">Somos distribuidores y aplicadores autorizados de una amplia gama de productos 
                 que dan respuesta a la industria de la construcción. </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-settings"></i></div>
+              <div class="icon"><i class="flaticon flaticon-umbrella"></i></div>
               <h4 class="title"><a href="">Impermeabilizaciones</a></h4>
               <p class="description">Nuestro objetivo es proteger su infraestructura, aportando soluciones de impermeabilización 
                 en todos los entornos relacionados con la construcción. </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-tasks-alt"></i></div>
+              <div class="icon"><i class="flaticon flaticon-bridge"></i></div>
               <h4 class="title"><a href="">Reforzamiento estructural</a></h4>
               <p class="description">Reforzar estructuras requiere un alto conocimiento de las técnicas y de los productos de 
                 última tecnología para mejorar las condiciones actuales y/o evitar que vuelvan a aparecer problemas en un futuro.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-tasks-alt"></i></div>
+              <div class="icon"><i class="flaticon flaticon-maintenance"></i></div>
               <h4 class="title"><a href="">Mantenimiento locativo</a></h4>
               <p class="description">Contamos con técnicos calificados para ejecutar todas las actividades necesarias 
                 para garantizar que sus instalaciones se encuentren en el mejor estado de funcionamiento, higiene y presentación. </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+          <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="700">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-tasks-alt"></i></div>
+              <div class="icon"><i class="flaticon flaticon-civil"></i></div>
               <h4 class="title"><a href="">Obra civil</a></h4>
               <p class="description">Construimos obras civiles en diferentes campos de aplicación de acuerdo 
                 con la normativa colombiana, planos, especificaciones técnicas y requerimientos que usted solicite. </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+          <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="800">
             <div class="icon-box">
-              <div class="icon"><i class="icofont-tasks-alt"></i></div>
+              <div class="icon"><i class="flaticon flaticon-crack"></i></div>
               <h4 class="title"><a href="">Tratamiento de juntas, grietas y fisuras</a></h4>
               <p class="description">Las juntas son la principal fuente de problemas en un piso industrial o pavimento rígido, 
                 razón por la cual tienen que ser intervenidas con materiales de mejores características que el concreto.</p>
@@ -309,110 +359,44 @@
       </div>
     </section><!-- End Values Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="fade-up">
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="fade-up">Contáctenos</h2>
+          <h2 data-aos="fade-up">Contáctanos</h2>
           <p data-aos="fade-up">Has tenido un buen comienzo, asesórate para un mejor progreso y juntos alcanzaremos el éxito</p>
         </div>
 
         <div class="row justify-content-center">
 
-          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+          <div class="contact-box col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up">
             <div class="info-box">
               <i class="bx bx-map"></i>
-              <h3>Nuestra dirección</h3>
-              <p>Carrera 69 D No. 3 A – 61. Bogotá – Colombia.</p>
+              <h3>Dirección</h3>
+              <p>Carrera 69 D No. 3 A – 61. <br>Bogotá – Colombia.</p>
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-box col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="100">
             <div class="info-box">
               <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@example.com<br>contact@example.com</p>
+              <h3>Escríbenos</h3>
+              <p><a href="mailto:contacto@tecno-reproim.com">contacto@tecno-reproim.com</a></p>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-box col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="200">
             <div class="info-box">
               <i class="bx bx-phone-call"></i>
               <h3>Llámanos</h3>
-              <p>+57 311 538 9461 <br>+1 314 552 1338 <br> 317 646 2101</p>
+              <p><a href="tel:5719247827">(1) 924 7827</a> &nbsp- <a href="tel:573115389461">311 538 9461</a><br><a href="tel:573145521338">314 552 1338</a>&nbsp- <a href="tel:3176462101">317 646 2101</a></p>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-box col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="200">
             <div class="info-box">
               <i class="bx bx-phone-call"></i>
-              <h3>Escríbenos</h3>
-              <p>+57 311 538 9461 <br>+1 311 321 1789 <br> 317 646 2101</p>
+              <h3>Whatsapp</h3>
+              <p><a href="https://api.whatsapp.com/send?phone=573115389461" target="_blank">311 538 9461</a>&nbsp- <a href="https://api.whatsapp.com/send?phone=573113211789" target="_blank">311 321 1789</a><br><a href="https://api.whatsapp.com/send?phone=573176462101" target="_blank">317 646 2101</a></p>
             </div>
           </div>
         </div>
@@ -422,20 +406,20 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo electrónico" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" placeholder="Mensaje"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -443,7 +427,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
             </form>
           </div>
 
@@ -464,41 +448,37 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3><img src="assets/img/logo-02.png" alt="" style="width: 80px;"></h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Carrera 69 D No. 3 A – 61.<br>              
+              Bogotá - Colombia <br><br>
+              <strong>Email:</strong><a href="mailto:contacto@tecno-reproim.com">contacto@tecno-reproim.com</a><br>
             </p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Ir a</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#topbar">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Servicios</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Nuestros Servicios</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Recubrimientos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Productos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mantenimiento</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Obra Civil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tratamiento de juntas</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Mantente en contacto</h4>
+            <p>Regístrate en nuestro boletín informativo para estar al tanto de todo lo nuevo en Tecno-reproim.</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="Suscribirse">
             </form>
           </div>
 
