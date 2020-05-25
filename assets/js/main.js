@@ -148,6 +148,14 @@
     items: 1
   });
 
+  // services carousel (uses the Owl Carousel library)
+  $(".services-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 2
+  });
+
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
