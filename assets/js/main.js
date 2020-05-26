@@ -176,6 +176,20 @@
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
+      $(".category").click(function(e){
+        e.preventDefault();
+        var filter = $(this).attr("data-filter");
+        if(filter == "todos"){
+          $(".box-img").show(500);
+        }
+        else {
+          $(".box-img").not("."+filter).hide(500);
+          $(".box-img").filter("."+filter).show(500);
+        }
+      });
+      $("#gallery ul li").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
     });
   });
 
@@ -190,3 +204,4 @@
   aos_init();
 
 })(jQuery);
+
