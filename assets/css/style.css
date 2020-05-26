@@ -2490,3 +2490,14 @@ section {
       columns: 1;
   }
 }
+
+/*Style Slide*/
+#carouselExampleIndicators{
+  height: 80vh !important;
+  position:relative !important;
+}
+.carousel-caption {
+  text-align: left;
+  top: 10%;
+
+}
