@@ -2493,7 +2493,7 @@ section {
   }
 }
 
-/*Style Slide*/
+//*Style Slide*/
 #carouselExampleIndicators{
   height: 80vh !important;
   position:relative !important;
@@ -2501,8 +2501,39 @@ section {
 .carousel-caption {
   text-align: left;
   top: 10%;
+
 }
 
-.carousel-title {
-background: rgba(64, 60, 60, 0.46);
+@media (max-width: 767px) { 
+  #gallery {
+      columns:2;
+  }
+  #carouselExampleIndicators{
+    height: 50vh !important;
+  
+  } 
+  .carousel-control-prev .carousel-control-next{
+    height: 30%;
+  }
+  #hero{
+    margin-bottom: -180px !important;
+  }
+
+}
+
+@media (max-width:550px) and (min-width: 250px){
+
+  #carouselExampleIndicators{
+    height: 25vh !important;
+  
+  } 
+  .carousel-control-prev .carousel-control-next{
+    height: 50%;
+  }
+  #hero{
+    margin-bottom: -50vh !important;
+  }
+  #hero h1{
+    font-size: 22px;
+  }
 }
