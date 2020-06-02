@@ -179,12 +179,13 @@
       $(".category").click(function(e){
         e.preventDefault();
         var filter = $(this).attr("data-filter");
+        $(".box-img").attr("hidden",false);
         if(filter == "todos"){
           $(".box-img").show(500);
         }
         else {
           $(".box-img").not("."+filter).hide(500);
-          $(".box-img").filter("."+filter).show(500);
+          $(".box-img").filter("."+filter).show(500);          
         }
       });
       $("#gallery ul li").click(function(){

@@ -406,8 +406,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #11b11d;
-  text-shadow: 1px 1px #f3f3f3;
+  color: #11b1aa;
+  text-shadow: 1px 1px #000000;
 }
 
 #hero h2 {
@@ -552,6 +552,7 @@ section {
   padding: 0 0 30px 0;
   position: relative;
   z-index: 3;
+  margin-top: 40px;
 }
 
 .why-us .content {
@@ -816,10 +817,10 @@ section {
 .clients .owl-item img {
   width: 95%; 
   max-height: 90%; 
-  opacity: 0.5;
+  /* opacity: 0.5; */
   transition: ease-in-out 0.3s;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
   margin: 0 10px;
 }
 
@@ -2167,7 +2168,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff9f7;
+  background: #e9f4fd;
 }
 
 #footer .footer-top .footer-contact {
@@ -2210,7 +2211,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ffa587;
+  color: #4682b4;
   font-size: 18px;
   line-height: 1;
 }
@@ -2256,7 +2257,7 @@ section {
   position: relative;
   border-radius: 50px;
   text-align: left;
-  border: 1px solid #ffe2d9;
+  border: 1px solid #4682b4;
 }
 
 #footer .footer-newsletter form input[type="email"] {
@@ -2274,7 +2275,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #4682B4;
+  background: rgb(96, 138, 172);
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -2282,7 +2283,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #ed3b00;
+  background: #4682B4;
 }
 
 #footer .credits {
@@ -2505,7 +2506,6 @@ section {
 .carousel-caption {
   text-align: left;
   top: 10%;
-
 }
 
 @media (max-width: 767px) { 
