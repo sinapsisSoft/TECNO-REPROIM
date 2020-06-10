@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 03/06/2020 20:04
+  	Creation date: 10/06/2020 02:32
   	*/
 
 @font-face {
@@ -70,3 +70,8 @@ font-style: normal;
 .flaticon-trust:before { content: "\f127"; }
 .flaticon-checklist:before { content: "\f128"; }
 .flaticon-global:before { content: "\f129"; }
+.flaticon-profit:before { content: "\f12a"; }
+.flaticon-family:before { content: "\f12b"; }
+.flaticon-home-insurance:before { content: "\f12c"; }
+.flaticon-heart:before { content: "\f12d"; }
+.flaticon-advice:before { content: "\f12e"; }
