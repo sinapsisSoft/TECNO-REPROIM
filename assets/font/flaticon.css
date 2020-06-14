@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 10/06/2020 02:32
+  	Creation date: 13/06/2020 23:19
   	*/
 
 @font-face {
@@ -75,3 +75,18 @@ font-style: normal;
 .flaticon-home-insurance:before { content: "\f12c"; }
 .flaticon-heart:before { content: "\f12d"; }
 .flaticon-advice:before { content: "\f12e"; }
+.flaticon-heavy-duty:before { content: "\f12f"; }
+.flaticon-river:before { content: "\f130"; }
+.flaticon-security-1:before { content: "\f131"; }
+.flaticon-money:before { content: "\f132"; }
+.flaticon-technician:before { content: "\f133"; }
+.flaticon-maintenance-1:before { content: "\f134"; }
+.flaticon-technician-1:before { content: "\f135"; }
+.flaticon-renovation:before { content: "\f136"; }
+.flaticon-room:before { content: "\f137"; }
+.flaticon-function:before { content: "\f138"; }
+.flaticon-health:before { content: "\f139"; }
+.flaticon-calendar:before { content: "\f13a"; }
+.flaticon-leader:before { content: "\f13b"; }
+.flaticon-wax:before { content: "\f13c"; }
+.flaticon-water-resistant:before { content: "\f13d"; }
