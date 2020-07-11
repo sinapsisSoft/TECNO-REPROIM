@@ -22,6 +22,7 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/vendor/toastr/css/toastr.css">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -112,8 +113,8 @@
         <div class="carousel-item">
           <div class="carousel-caption d-md-block">
             <div class="carousel-title" data-aos="zoom-out">
-              <h1 class="animated rotateInDownRight delay-1s ">Texto 1</h1>
-              <h3 class="animated fadeInDown delay-2s d-none d-sm-block">Frase 1.</h3>
+              <h1 class="animated rotateInDownRight delay-1s ">EXPERIENCIA</h1>
+              <h3 class="animated fadeInDown delay-2s d-none d-sm-block">Aplicadores con más de 20 años de labor a su servicio.</h3>
             </div>
           </div>
           <img src="assets/img/slider/slide1.jpg" class="d-block w-100" alt="...">
@@ -122,8 +123,8 @@
         <div class="carousel-item">
           <div class="carousel-caption d-md-block">
             <div class="carousel-title" data-aos="zoom-out">
-              <h1 class="animated rotateInUpRight delay-1s ">Texto 2</span></h1>
-              <h3 class="animated fadeInDown delay-2s d-none d-sm-block">Frase 2.</h3>
+              <h1 class="animated rotateInUpRight delay-1s ">INVERSIÓN INTELIGENTE</span></h1>
+              <h3 class="animated fadeInDown delay-2s d-none d-sm-block">Cumplimiento y calidad que aseguran tu inversión.</h3>
             </div>
           </div>
           <img src="assets/img/slider/slide2.jpg" class="d-block w-100" alt="...">
@@ -431,7 +432,7 @@
 
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
           <div class="col-xl-9 col-lg-12 mt-4">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" id="contactForm" class="php-email-form" onsubmit="sendData(this.id, 1);">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre"
@@ -456,14 +457,9 @@
                 </div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                <textarea class="form-control" id="message" name="message" rows="5" data-rule="required"
                   placeholder="Mensaje"></textarea>
                 <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Enviar mensaje</button></div>
             </form>
@@ -540,11 +536,9 @@
         </div>
       </div>
       <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/reproim" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/tecno.reproim.7" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/tecno_reproim/" class="instagram"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -561,6 +555,7 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

@@ -206,3 +206,129 @@
 
 })(jQuery);
 
+//Validate information
+function sendData(idform, type) {
+  if (validatorForm(idform)) {
+    if (type == 1) { //Formulario contáctenos
+      // if (validateCaptcha) {
+        let objForm = document.getElementById(idform);
+        let ArrayData = "";
+        for (let i = 0; i < objForm.length; i++) {
+          if (objForm[i].type == "text" || objForm[i].type == "email" || objForm[i].type == "number" || objForm[i].type == "select-one") {
+            ArrayData += '"' + objForm[i].id + '":' + '"' + objForm[i].value + '",';
+          }
+          else if (objForm[i].id == "message") {
+            ArrayData += '"' + objForm[i].id + '":' + '"' + objForm[i].value + '",';
+          }
+        }
+        ArrayData = ArrayData.substr(0, ArrayData.length - 1); 
+        sendMail(ArrayData, idform, 1);
+      // }
+      // else {
+      //   toastr.warning("Comprueba que no eres un robot", "Verifica el captcha", {
+      //     "closeButton": true,
+      //     "progressBar": true,
+      //     "showDuration": "1000",
+      //     "hideDuration": "1000",
+      //     "timeOut": "5000",
+      //   });
+      // }
+    }
+  }
+}
+
+function sendMail(json, idForm, type) {  
+  try {
+    dataSetMail = "";
+    var xhttp = new XMLHttpRequest();
+    if (type == 1) {
+      dataSetMail = '{"POST":"SEND_MAIL",' + json + '}';
+    }
+    xhttp.open("POST", "php/mail/notification.php", true);
+    xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhttp.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        console.log(xhttp.responseText);
+        if (xhttp.responseText != 0) {
+          if (type == 1) {
+            toastr.success("Pronto nos comunicaremos contigo", "Gracias por escribirnos", {
+              "closeButton": true,
+              "progressBar": true,
+              "showDuration": "1000",
+              "hideDuration": "1000",
+              "timeOut": "5000",
+            });
+          }
+          cleanForm(idForm, type);
+          $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+        } else {
+          toastr.error("Hubo un error, por favor intenta nuevamente", "Error al enviar la solicitud", {
+            "closeButton": true,
+            "progressBar": true,
+            "showDuration": "1000",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+          });
+        }
+      }
+    };
+    xhttp.send(dataSetMail);
+  } catch (error) {
+    console.error(error);
+    toastr.error("Se presentó un error, intenta nuevamente", "Error en el registro", {
+      "closeButton": true,
+      "progressBar": true,
+      "showDuration": "1000",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+    });
+  }
+}
+
+//Validate form
+function validatorForm(idForm) {
+  let objForm = document.getElementById(idForm);
+
+  ///For input ///
+  for (let i = 0; i < objForm.length; i++) {
+    if (objForm[i].required == true) {
+      if (objForm[i].type == "email") {
+        if (objForm[i].value == "" || objForm[i].value.length == 0) {
+          return false;
+        }
+      }
+      if (objForm[i].type == "password") {
+        if (objForm[i].value == "" || objForm[i].value.length == 0) {
+          return false;
+        }
+      }
+      if (objForm[i].type == "text") {
+        if (objForm[i].value == "" || objForm[i].value.length == 0) {
+          return false;
+        }
+      }
+      if (objForm[i].type == "number") {
+        if (objForm[i].value == "" || objForm[i].value.length == 0) {
+          return false;
+        }
+      }
+
+    }
+  }
+  return true;
+}
+
+function cleanForm(idForm, type) {
+  objForm = document.getElementById(idForm);
+  for (let i = 0; i < objForm.length; i++) {
+    if (objForm[i].type == 'checkbox') {
+      objForm[i].checked = false;
+    }
+    else {
+      objForm[i].value = "";
+    }
+  }
+  // if (type == 1) {
+  //   grecaptcha.reset();
+  // }
+}
