@@ -4,6 +4,21 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+var validateCaptcha = false;
+var captcha = null;
+
+//Function captcha Google
+var onloadCallback = function () {
+  captcha = grecaptcha.render('html_element_captcha', {
+    'sitekey': '6LfEXLAZAAAAAD6LFAIJuw4kIlYawGeJKM5nLh07',
+    'callback': function (response) {
+      //$('#btn_submit').removeAttr('disabled');
+      validateCaptcha = true;
+    },
+    'theme': 'white'
+  });
+};
+
 !(function($) {
   "use strict";
 
@@ -210,7 +225,7 @@
 function sendData(idform, type) {
   if (validatorForm(idform)) {
     if (type == 1) { //Formulario contáctenos
-      // if (validateCaptcha) {
+       if (validateCaptcha) {
         let objForm = document.getElementById(idform);
         let ArrayData = "";
         for (let i = 0; i < objForm.length; i++) {
@@ -223,16 +238,16 @@ function sendData(idform, type) {
         }
         ArrayData = ArrayData.substr(0, ArrayData.length - 1); 
         sendMail(ArrayData, idform, 1);
-      // }
-      // else {
-      //   toastr.warning("Comprueba que no eres un robot", "Verifica el captcha", {
-      //     "closeButton": true,
-      //     "progressBar": true,
-      //     "showDuration": "1000",
-      //     "hideDuration": "1000",
-      //     "timeOut": "5000",
-      //   });
-      // }
+       }
+      else {
+        toastr.warning("Comprueba que no eres un robot", "Verifica el captcha", {
+          "closeButton": true,
+          "progressBar": true,
+          "showDuration": "1000",
+          "hideDuration": "1000",
+          "timeOut": "5000",
+        });
+      }
     }
   }
 }
@@ -328,7 +343,7 @@ function cleanForm(idForm, type) {
       objForm[i].value = "";
     }
   }
-  // if (type == 1) {
-  //   grecaptcha.reset();
-  // }
+  if (type == 1) {
+    grecaptcha.reset();
+  }
 }
